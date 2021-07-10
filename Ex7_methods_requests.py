@@ -48,7 +48,7 @@ print('')
 
 for i in range(len(paramsList)):
     print("POST-запрос передает значения параметра method равное " + paramsList[i])
-    response = requests.get(tested_endpoint, data={"method": paramsList[i]})
+    response = requests.post(tested_endpoint, data={"method": paramsList[i]})
     print(response.text)
 print('')
 
